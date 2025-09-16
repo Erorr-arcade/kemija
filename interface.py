@@ -17,7 +17,7 @@ while task!="q" and task!="Q":
         notes = input("Opis: ")
         name=pathlib.Path(smiles)
         with open(f"{path}/html/{name}.html", "w") as f:
-            f.write(getHtml(smiles=smiles,width="100%",height="50%",scale=0.3))
+            f.write(getHtml(smiles=smiles,width="100%",height="50%"))
             f.write(notes)
         
         #qr
